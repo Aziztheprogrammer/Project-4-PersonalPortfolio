@@ -1,0 +1,236 @@
+/* Adding Fonts From Device */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+/*Website Building*/
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+	scroll-behavior: smooth;	
+	font-family: 'Poppins',sans-serif;
+}
+
+/*Global Variables*/
+:root {
+	--main-color: #9F1AD7;
+}
+
+/*--------------Navigation Bar------------*/
+
+header {
+	width: 100%;
+	height: 10vh;
+	padding: 5px 10%;
+	background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+	font-size: 1.7em;
+	font-weight: 600;
+	color: var(--main-color);
+	cursor: pointer;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+	margin-left: 20px;
+	transition: 0.7s all ease;
+}
+
+header  nav a:hover {
+	color: var(--main-color);
+}
+
+/*---------------Main Section-------------*/
+
+section.main-section {
+	width: 100%;
+	height: 90vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background: url('ImageFiles/worker1.png');
+	background-size: cover;
+}
+
+section.main-section > h2 {
+	font-size: 2.5em;
+	font-weight: 500;
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+section.main-section > h2 span {
+	color: var(--main-color);
+	font-weight: 600;
+	margin-bottom: 13px;
+	margin-top: 13px;
+	display: inline-block;
+}
+
+section.main-section > h3 {
+	font-weight: 500;
+	word-spacing: 1px;
+	text-transform: capitalize;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+    
+}
+
+section.main-section > button.main-btn {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.7s all ease;
+}
+
+.main-btn:hover {
+	transform: scale(1.03);
+	opacity: 0.9;
+}
+
+div.social-media-icons {
+	height: fit-content;
+	width: fit-content;
+}
+
+div.social-media-icons > a {
+	color: var(--main-color);
+	margin-right: 10px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+/*-------------Services Section-----------*/
+
+section.services-section {
+	width: 100%;
+	height: auto;
+	padding: 50px 10%;
+
+}
+
+.my-services-title, .h2-title {
+	color: var(--main-color);
+	font-size: 2em;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 19em;
+	padding: 15px;
+	height: 250px;
+	margin: 15px;
+	text-align: center;
+	background-color: #ffffff;
+	box-shadow: 0 5px 25px 
+	           rgb(1 1 1 / 15%);
+	border-radius: 10px;
+	transition: 0.7s all ease;
+	text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card 
+i, h3, p {
+	margin-bottom: 10px;
+}
+
+.card > i {
+	font-size: 3em;
+	display: inline-block;
+}
+
+.card > h3 {
+	color: var(--main-color);
+	font-size: 1.2em;
+}
+
+.card > p {
+	text-transform: capitalize;
+}
+
+/*--------------Contact US----------------*/
+
+section.contact-us-section {
+    width: 100%;
+	height: auto;
+	padding: 0px 10% 50px 10%;
+}
+
+div.content-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+div.contact-us-option {
+	width: 19em;
+	padding: 15px;
+	margin: 15px;
+	text-align: center;
+	box-shadow: 0 5px 25px 
+	           rgb(1 1 1 / 15%);
+    border-radius: 10px;
+	transition: 0.7s all ease;
+}
+
+div.content-2 i {
+	transition: 1s ease all;
+}
+
+div.contact-us-Whatsapp:hover {
+	background: linear-gradient(90deg, rgba(34,135,25,1) 0%, rgba(52,255,0,1) 100%);
+	transition: 0.7s all ease;
+}
+
+div.contact-us-instagram:hover {
+	background: linear-gradient(90deg, rgba(233,169,241,1) 0%, rgba(178,77,198,1) 100%);
+	transition: 0.7s all ease;
+}
+
+div.contact-us-twitter:hover {
+	background: linear-gradient(90deg, rgba(119,217,212,1) 0%, rgba(0,159,255,1) 100%);
+	transition: 0.7s all ease;
+}
+
+div.contact-us-option:hover i {
+	color: white;
+}
+div.contact-us-option:hover i.fi-xwsrxl-arrow-solid {
+	margin-left: 215px;
+}
